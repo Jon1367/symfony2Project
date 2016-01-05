@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="row">
+
+	<h1 class="text-center">Welcome to Jon's Form</h1>
+
+	<form class="form-horizontal col-md-6 col-md-offset-5" action="/processForm" method="POST">
+
+		<div class="form-group">
+			<input type="email" name="email" placeholder="Enter Email">
+
+		</div>
+
+		<div class="form-group">
+			<select name="gender" id="">
+				<option>Gender</option>
+				<option value="male">Male</option>
+				<option value="female">female</option>
+				<option value="other">other</option>
+
+			</select>
+		</div>
+
+		<div class="form-group">
+			<textarea name="comments" id="" cols="30" rows="10"></textarea>
+		</div>
+
+		<div class="form-group">
+			<input type="submit">
+		</div>
+
+	</form>
+</div>
+
+{% endblock %}
